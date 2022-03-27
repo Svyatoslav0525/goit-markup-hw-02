@@ -1,0 +1,300 @@
+/* Колір основного текста: #757575 */
+/* Другорядний колір: #212121 */
+/* Акцент: #2196F3 */
+/* Акцент: color: rgba(255, 255, 255, 0.6); */
+/* Колір фону: #2F303A; #FFFFFF; #E5E5E5; #F5F4FA; */
+/* Колір головної кнопки: background: #2196F3;
+/* Колір інших кнопок на сторінці Портфоліо: #F5F4FA; */
+/* Колір Логотипу Studio: #000000; */
+
+/* Задаємо глобальні змінні */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --main-background-color: #e5e5e5;
+  --second-background-color: #2f303a;
+}
+
+/* Задаємо основні параметри */
+
+body {
+  background-color: var(--main-background-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+/* Шапка сайта */
+.header {
+  background-color: #ffffff;
+  background-size: 1600px 80px;
+}
+
+.logo {
+  font-family: Raleway;
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Логотип компанії */
+.logo .accent {
+  color: var(--accent-color);
+}
+
+.logo:hover {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Навігація шапки сайта*/
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Контакти компанії */
+
+.contact-nav .link {
+  color: #757575;
+}
+
+/* ! Об'єднання деяких класів навігації і контактів компанії ! */
+
+.site-nav .link,
+.contact-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* !!! Герой !!! */
+
+.hero {
+  background-color: var(--second-background-color);
+  background-size: 1600px 600px;
+  text-align: center;
+  top: 80px;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button-primary {
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+
+  color: #ffffff;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+}
+
+/* Заголовки тем: */
+/* Наші переваги */ /* Сфера надання послуг компанії */
+/* Команда компанії */
+
+.advantage-title,
+.service-title,
+.staff-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Наші переваги */
+.advantage .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantage .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Команда компанії */
+
+.section-staff {
+  background-color: #f5f4fa;
+  background-size: 1600px 648px;
+  text-align: center;
+  left: 0px;
+  top: 1449px;
+}
+
+.feature .member,
+.feature .member-position {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.feature .member {
+  font-weight: 500;
+  color: var(--title-text-color);
+}
+
+.feature .member-position {
+  font-weight: 400;
+  color: var(--primary-text-color);
+}
+
+/* !!! Список основних кнопок на сторінці "Portfolio" */
+
+.btn-list {
+  text-align: center;
+}
+
+.btn {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  top: 174px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-all {
+  width: 73px;
+  height: 38px;
+}
+
+.btn-websites {
+  width: 128px;
+  height: 38px;
+}
+
+.btn-application {
+  width: 145px;
+  height: 38px;
+}
+
+.btn-design {
+  width: 103px;
+  height: 38px;
+}
+
+.btn-marketing {
+  width: 130px;
+  height: 38px;
+}
+
+/* ! Зображення послуг в картинках на сторінці "Portfolio" ! */
+
+.spectrum-title {
+  color: var(--title-text-color);
+  letter-spacing: 0.06em;
+  font-size: 18px;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.spectrum-text,
+.post-text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+}
+
+/* Футер !!! */
+
+.footer {
+  background-color: var(--second-background-color);
+  background-size: 1600px 252px;
+}
+
+.footer.logo {
+  color: #ffffff;
+}
+
+.footer.logo:hover {
+  color: var(--accent-color);
+}
+
+.footer .address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .link {
+  color: var(--footer-contact-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer .address:hover,
+.footer .address:focus,
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
