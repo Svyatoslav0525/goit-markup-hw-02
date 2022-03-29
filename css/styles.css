@@ -186,7 +186,7 @@ body {
 
 /* !!! Список основних кнопок на сторінці "Portfolio" */
 
-.btn-list {
+.buttons {
   text-align: center;
 }
 
@@ -239,6 +239,9 @@ body {
   height: 38px;
 }
 
+.btn-list {
+  list-style: none;
+}
 /* ! Зображення послуг в картинках на сторінці "Portfolio" ! */
 
 .spectrum-title {
@@ -249,15 +252,15 @@ body {
   text-decoration: none;
 }
 
-.spectrum-text,
 .post-text {
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+}
+.spectrum-link {
   text-decoration: none;
 }
-
 /* Футер !!! */
 
 .footer {
